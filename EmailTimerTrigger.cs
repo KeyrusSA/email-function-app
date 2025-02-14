@@ -24,7 +24,7 @@ namespace Email.Notifications
                 _logger.LogInformation($"Next timer schedule at: {myTimer.ScheduleStatus.Next}");
             }
 
-            var endpoint = "https://web-infoflo-api-production-zan-agdcbufgfuaueegt.southafricanorth-01.azurewebsites.net/api/send-email-notifications";
+            var endpoint = "https://web-infoflo-api-production-zan-agdcbufgfuaueegt.southafricanorth-01.azurewebsites.net/api/email/send-email-notifications";
             try
             {
                 var response = await _httpClient.GetAsync(endpoint);
